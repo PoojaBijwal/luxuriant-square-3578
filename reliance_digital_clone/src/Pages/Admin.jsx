@@ -19,6 +19,7 @@ function Admin() {
         <Route path="/removeproduct" element={<RemoveProduct/>} />
         <Route path="/manageorder" element={<ManageOrder/>} />
        </Routes>
+       hello
     </Box>
   )
 }

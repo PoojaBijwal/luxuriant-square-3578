@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Admin from './Pages/Admin';
 
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Admin />
 
       {/* <Home />
       <Footer/> */}
