@@ -37,9 +37,10 @@
   }
 }
 .foot{
-  width: 100%;
+  width: 1150px;
   height: auto;
-  background-color: rgb(5, 5, 90);
+  /* border: 3px solid red; */
+  background-color: rgb(8, 8, 150);
   color: white;
   
   gap:100px;
@@ -56,7 +57,7 @@
 }
 .dis{
   width: 100%;
-  background-color: rgb(20, 19, 19);
+  background-color:rgb(28, 28, 133);
   color:white;
   margin: auto;
  
