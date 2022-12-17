@@ -2,11 +2,12 @@
 import React from "react";
 import { Box, Heading, Divider, FormControl, Select, FormLabel, Input, Button, } from "@chakra-ui/react";
 import {useToast}  from '@chakra-ui/react';
-
+import {useDispatch} from "react-redux";
+import { AdminAddProduct } from "../Redux/Admin/admin.actions";
 
 const init = {
   title : "",
-  stock : 0,
+  // stock : 0,
   price : 0,
   category : "",
   image : "",
@@ -15,6 +16,7 @@ const init = {
 
 function AddProduct() {
   const [detail,setDetail] = React.useState(init);
+  const dispatch = useDispatch();
   const toast = useToast()
 
   const handleChange = (e)=>{
@@ -23,7 +25,7 @@ function AddProduct() {
   }
   const handleAdd = (e)=>{
     e.preventDefault();
-    console.log(detail);
+    dispatch(AdminAddProduct(detail.category,detail));
     setDetail(init);
     toast({
       description: "Product Added Successfully",
@@ -34,7 +36,7 @@ function AddProduct() {
     })
   }
 
-const {title,stock,price,image,category,description} = detail;
+const {title,price,image,category,description} = detail;
 
   return (
     <Box mt={5}>
@@ -44,15 +46,15 @@ const {title,stock,price,image,category,description} = detail;
           <FormControl>
             <FormLabel>Product Name</FormLabel>
             <Input placeholder="Product name" name="title" value={title} onChange={handleChange}/>
-            <FormLabel>Stock</FormLabel>
-            <Input placeholder="Number of Product" name="stock" value={stock} onChange={handleChange}/>
+            {/* <FormLabel>Stock</FormLabel>
+            <Input placeholder="Number of Product" name="stock" value={stock} onChange={handleChange}/> */}
             <FormLabel>Price</FormLabel>
             <Input placeholder="Product Price" name="price" value={price} onChange={handleChange}/>
             <FormLabel>Category</FormLabel>
             <Select placeholder="Select country" name="category" value={category} onChange={handleChange}>
               <option value={'mobile'}>Mobile</option>
-              <option value={'men'}>Men's Clothes</option>
-              <option value={'women'}>Women's Clothes</option>
+              <option value={"men_clothes"}>Men's Clothes</option>
+              <option value={"women_clothes"}>Women's Clothes</option>
               <option value={'camera'}>Camera</option>
             </Select>
             <FormLabel>Image</FormLabel>
