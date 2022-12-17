@@ -51,9 +51,9 @@ const {title,stock,price,image,category,description} = detail;
             <FormLabel>Category</FormLabel>
             <Select placeholder="Select country" name="category" value={category} onChange={handleChange}>
               <option value={'mobile'}>Mobile</option>
-              <option value={'mens Clothes'}>Mens Clothes</option>
-              <option value={'womens Clothes'}>Womens Clothes</option>
-              <option value={'shoes'}>Shoes</option>
+              <option value={'men'}>Men's Clothes</option>
+              <option value={'women'}>Women's Clothes</option>
+              <option value={'camera'}>Camera</option>
             </Select>
             <FormLabel>Image</FormLabel>
             <Input placeholder="Product Image url" name="image" value={image} onChange={handleChange}/>
