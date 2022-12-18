@@ -28,7 +28,7 @@ function Dashboard() {
       <Heading>Dashboard</Heading>
       <Divider />
       <Box w="90%" margin="auto" mt={50} color="white">
-        <SimpleGrid columns={5} spacing="20">
+        <SimpleGrid columns={{base:1,md:3,lg:5}} spacing="20">
           <Flex
             bg="blue.400"
             align={"center"}
