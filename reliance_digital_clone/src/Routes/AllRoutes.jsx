@@ -8,6 +8,8 @@ import Payments from '../Pages/Payments';
 import Register from '../Pages/Register';
 import Search from "../Routes/AllRoutes";
 import Home from '../Pages/Home/Home';
+import MobilePage from "../Pages/MobilePage";
+import CameraPage from "../Pages/CameraPage";
 
 
 const AllRoutes = () => {
@@ -21,6 +23,8 @@ const AllRoutes = () => {
         <Route path='/checkout' element={<Checkout/>}/>
         <Route path='/payments' element={<Payments/>}/>
         <Route path='/final' element={<Final/>}/>
+        <Route path='/mobile' element={<MobilePage/>}/>
+        <Route path='/camera' element={<CameraPage/>}/>
         <Route path='/item/:id' element={<EachProduct/>}/>
     </Routes>
   )

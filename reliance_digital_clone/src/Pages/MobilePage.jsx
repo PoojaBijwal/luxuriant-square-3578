@@ -17,7 +17,7 @@ function MobilePage() {
     <Box w="90%" margin="auto">
        <SimpleGrid columns={{base:1,md:2,lg:4}} spacing={10}>
         {
-            product_Data?.map((product)=><ProductCard id={product.id} key={product.id} title={product.title} price={product.price} desc={product.description} image={product.image}/>)
+            product_Data?.map((product)=><ProductCard id={product.id} key={product.id} title={product.title} category={product.category} price={product.price} desc={product.description} image={product.image}/>)
         }
        </SimpleGrid>
     </Box>

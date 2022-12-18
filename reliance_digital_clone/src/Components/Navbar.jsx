@@ -177,8 +177,8 @@ const Navbar = () => {
   const { firstName, setsearch, car } = useContext(AppContext);
   const arr = [
     { a: "laptop", b: "/laptops" },
-    { a: "Smartphone", b: "/smartphones" },
-    { a: "smartphone", b: "/smartphones" },
+    { a: "Smartphone", b: "/mobile" },
+    { a: "Camera", b: "/camera" },
     { a: "phone", b: "/smartphones" },
     { a: "watch", b: "/smartwatches" },
     { a: "tablet", b: "/tablets" },
@@ -246,7 +246,7 @@ const Navbar = () => {
           <Spacer />
           <Flex width="300px">
             <Box cursor="pointer">
-              <i class="fa-solid fa-location-dot"></i> Select your location
+              <i className="fa-solid fa-location-dot"></i> Select your location
             </Box>
             <Spacer />
 
@@ -255,7 +255,7 @@ const Navbar = () => {
               display="flex"
               onClick={() => navigate("/cart")}
             >
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i className="fa-solid fa-cart-shopping"></i>
               {car > 0 && (
                 <Box
                   style={{
@@ -273,7 +273,7 @@ const Navbar = () => {
 
             <Spacer />
             <Box onClick={() => navigate("/login")} cursor="pointer">
-              <i class="fa-solid fa-user"></i>{" "}
+              <i className="fa-solid fa-user"></i>{" "}
               {firstName !== "" ? firstName : "Login"}
             </Box>
             <Spacer />
@@ -309,7 +309,7 @@ const Navbar = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <p onClick={() => navigate("/smartphone")}>Smartphones</p>
+                <p onClick={() => navigate("/mobile")}>Smartphones</p>
                 <p
                   onClick={() => {
                     setsearch("OnePlus");
@@ -609,7 +609,7 @@ const Navbar = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <p>Smartphones</p>
+                <p onClick={()=>navigate("/camera")}>Cameras</p>
                 <p>OnePlus Nord 2T 5G</p>
                 <p>Wearable Technology</p>
                 <p>Smart Watch Accessories</p>

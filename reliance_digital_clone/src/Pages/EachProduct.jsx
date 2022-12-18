@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useReducer, useRef } from "react";
+import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import {
@@ -26,19 +27,25 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { reducer } from "../Redux/reducer";
-import { add, dataAdd } from "../Redux/Action";
+import { useState } from "react";
+// import {AdminGetProduct} from "../Redux/Admin/admin.actions";
+// import {useDispatch,useSelector} from "react-redux";
 
 const EachProduct = () => {
-  const params = useParams();
+  const {item,id} = useParams();
+  // const product_data = useSelector((store)=>store.admin.data);
+  // const dispatch = useDispatch();
   const { bigarr, setCar, pincode, setPincode, settotal } =
     useContext(AppContext);
   const navigate = useNavigate();
   const pin = useRef({});
+  const [product,setProduct] = useState();
+  
 
+ 
   let g = {};
   for (let i = 0; i < bigarr.length; ++i) {
-    if (bigarr[i].id === Number(params.id)) {
+    if (bigarr[i].id === Number(id)) {
       g = bigarr[i];
       g.qty = 1;
     }
@@ -68,7 +75,7 @@ const EachProduct = () => {
         <Box textAlign="left">
           <Text color="grey">Article ID: 492849541</Text>
           <br />
-          <Text fontSize="xl">{g.name}</Text>
+          <Text fontSize="xl">{g.title}</Text>
           <br />
           <hr />
           <Flex>
@@ -89,7 +96,7 @@ const EachProduct = () => {
                 <ListItem>
                   Buy RCP warranty and save up to 55%. Read T&C
                 </ListItem>
-                <Text>See more >></Text>
+                <Text>See more </Text>
                 <Text fontWeight="bold">
                   Save more with EMI/Cashback (1) Read T&C
                 </Text>
@@ -116,16 +123,16 @@ const EachProduct = () => {
               justifyContent="space-between"
             >
               <Text fontSize="2xl" color="#28316b">
-                ₹ {g.price}
+                ₹ {product.price}
               </Text>
               <Flex>
-                <Text>MRP: </Text>
-                <Text as="del">₹{g.offer}</Text>
+                <Text>MRP: ₹ {product.price}</Text>
+                {/* <Text as="del">₹{g.offer}</Text> */}
               </Flex>
-              <Flex color="green">
+              {/* <Flex color="green">
                 <Text>You Save :</Text>
                 <Text>{g.save}%</Text>
-              </Flex>
+              </Flex> */}
               <Text fontWeight="bold">FREE Shipping!</Text>
               <Input
                 placeholder="Pin Code"

@@ -11,11 +11,15 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ProductCard(props) {
-  const { id, image, title, desc, price } = props;
+  const { id, image, title, category, price } = props;
+  const navigate = useNavigate();
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    navigate(`/${category}/${id}`);
+  };
   return (
     <Box>
       <Card maxW="sm" onClick={handleClick}>
