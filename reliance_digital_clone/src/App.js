@@ -4,7 +4,9 @@ import './App.css';
 // import Navbar from './components/Navbar';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-
+import './App.css';
+import Admin from "./Pages/Admin"
+import Cart from './Pages/Cart';
 
 function App() {
   return (
@@ -16,7 +18,12 @@ function App() {
       {/* <Footer/> */}
       <Login />
       <Register />
-    </div>
+      <Cart />
+
+     <Admin />
+      {/* <Home />
+      <Footer/> */}
+     </div>
   );
 }
 
