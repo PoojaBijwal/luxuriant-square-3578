@@ -1,0 +1,16 @@
+
+
+.product{
+    width: auto;
+    height: auto;
+    /* border:  2px solid red; */
+    gap:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 40px;
+}
+.product:hover{
+    cursor: pointer;
+}
+url{
+    height: 40%;
+}

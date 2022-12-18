@@ -1,0 +1,18 @@
+.digital{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    /* gap:10px */
+}
+.digital>div{
+    width:90%
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px){
+    .digital{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .digital>div{
+        width:90%
+    }
+}
