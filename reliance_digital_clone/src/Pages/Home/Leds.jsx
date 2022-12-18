@@ -30,7 +30,7 @@ const Leds = () => {
 
   return (
     <>
-    <h1 style={{marginRight:"70%"}}>BEST SELLERS FROM TV </h1>
+    <h1 style={{fontSize:"30px", marginRight:"950px"}}>BEST SELLERS FROM TV </h1>
 
       <Flex>
           {/* <img style={{marginRight:"20px",marginBottom:"20px"}} src="https://www.reliancedigital.in/medias/Smartwatches-Producst-Carousel-27-10-2022-02.jpg?context=bWFzdGVyfGltYWdlc3wxMDA3NTB8aW1hZ2UvanBlZ3xpbWFnZXMvaGViL2gxYS85OTEzNzc2Nzk5Nzc0LmpwZ3w0YzI5OWYwMDI2YzYzMGJiZmRhZGRhZGQyNWIwNTc1OGVmZDRlZmY2NmYzN2E4ZDdkZjMxMzRkM2QxMGYzNmQy" /> */}
@@ -40,12 +40,12 @@ const Leds = () => {
               if(index<=4){
                   return(
 
-                      <Grid>
+                      <Grid >
               <Led key={ele.id} 
               url={ele.url} 
               title={ele.title}
               price={ele.price}
-              mrp={ele.mrp} 
+              // mrp={ele.mrp} 
               save={ele.save}  
               />
              

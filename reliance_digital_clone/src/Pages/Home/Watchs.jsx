@@ -24,11 +24,11 @@ const Watchs = () => {
   
 
   return (
-    <>
-    <h1 style={{marginRight:"50%"}}>  SMARTWATCHES STARTING FROM 999</h1>
+    <div style={{width:"100%"}}>
+    <h1 style={{fontSize:"30px", marginRight:"750px"}}>  SMARTWATCHES STARTING FROM 999</h1>
 
       <Flex>
-          <img style={{marginRight:"20px",marginBottom:"20px"}} src="https://www.reliancedigital.in/medias/Smartwatches-Producst-Carousel-27-10-2022-02.jpg?context=bWFzdGVyfGltYWdlc3wxMDA3NTB8aW1hZ2UvanBlZ3xpbWFnZXMvaGViL2gxYS85OTEzNzc2Nzk5Nzc0LmpwZ3w0YzI5OWYwMDI2YzYzMGJiZmRhZGRhZGQyNWIwNTc1OGVmZDRlZmY2NmYzN2E4ZDdkZjMxMzRkM2QxMGYzNmQy" />
+          <img style={{marginRight:"20px",marginBottom:"20px"}} src="https://www.reliancedigital.in/medias/Apple-Watches-Producst-Carousel-29-11-2022.jpg?context=bWFzdGVyfGltYWdlc3w1NTYyOHxpbWFnZS9qcGVnfGltYWdlcy9oOTQvaDQyLzk5MjgzNzA5Nzg4NDYuanBnfDg5OTE2MzFkOTU2YmI1ODhjOTZmODQ2YzkyNjUzNjYwZTYxZGQ2NGY4OTdhNmU3YjBkZGZmZGI3MzM2OWQwNzQ" />
         {
           arr.map((ele,index) =>{
 
@@ -52,7 +52,7 @@ const Watchs = () => {
             }
       </Flex>
      
-    </>
+    </div>
 
 
 

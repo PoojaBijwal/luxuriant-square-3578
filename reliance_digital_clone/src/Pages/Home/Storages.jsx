@@ -26,7 +26,7 @@ const Storages = () => {
 
   return (
     <>
-    <h1 style={{marginRight:"50%"}}> KODAK TV  STARTING FROM 7499</h1>
+    <h1 style={{fontSize:"30px", marginRight:"800px"}}> KODAK TV  STARTING FROM 7499</h1>
 
       <Flex>
         {
@@ -52,7 +52,7 @@ const Storages = () => {
         }
         )
     }
-    <img style={{marginRight:"20px",marginBottom:"20px",height:"300px",width:"500px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKI0elTdC0l9XFLu1cxzDccTQ_xdezSUGjpg&usqp=CAU"  alt="LEDS"/>
+    <img style={{marginRight:"20px",marginBottom:"20px",height:"300px",width:"500px"}} src="https://www.reliancedigital.in/medias/Storage-Producst-Carousel-10-11-2022-1-.jpg?context=bWFzdGVyfGltYWdlc3w5NjQxOHxpbWFnZS9qcGVnfGltYWdlcy9oNGEvaDhhLzk5MTkyMTU1NjY4NzguanBnfGZlOWFlODIwMTI5OTE3ZDRkNzA1YmQ0YTBlZjZiOWIzZTRlMzJmZjhiODdmNzk1NjNkMTFjMjMxZTg2ZjY1Yzk&usqp=CAU"  alt="LEDS"/>
       </Flex>
      
     </>

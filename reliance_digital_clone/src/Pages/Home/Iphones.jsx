@@ -26,11 +26,11 @@ const Iphones = () => {
   
 
   return (
-    <>
-    <h1 style={{marginRight:"50%"}}> APPLE IPHONE 14 & 14 PLUS</h1>
+    <div style={{width:"100%"}}>
+    <h1 style={{fontSize:"30px", marginRight:"870px"}}> APPLE IPHONE 14 & 14 PLUS</h1>
 
       <Flex>
-          <img style={{marginRight:"20px",marginBottom:"20px",height:"300px",width:"350px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuRdEqaXsus1L8F9Ngc1QFY43alGlQwDjsQ&usqp=CAU" />
+          <img style={{marginRight:"20px",marginBottom:"20px",height:"300px",width:"350px"}} src="https://www.reliancedigital.in/medias/iPhone-14-Producst-Carousel-27-10-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMzgxMHxpbWFnZS9qcGVnfGltYWdlcy9oYzcvaGQxLzk5MTM3NzcxMjc0NTQuanBnfDA0NzFkZmIwYjVlMWZjZjUxZGY5MjA3NmVlMTdiNTY0ZjhmODU1NjkxY2Y2NDRjNjUxOTQ2MTc5Nzg5MjQxZjk&usqp=CAU" />
         {
           arr.map((ele,index) =>{
 
@@ -52,7 +52,7 @@ const Iphones = () => {
             }
       </Flex>
      
-    </>
+    </div>
 
 
 

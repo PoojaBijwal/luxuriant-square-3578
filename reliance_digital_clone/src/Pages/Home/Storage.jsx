@@ -10,7 +10,7 @@ const Storage = ({url, title,price,mrp,save}) => {
    
     <div style={{ width:"90%",
     height:"430px",
-   
+    
     display:"fles",
     gridTemplatecolumns:"repeat(3,1fr)",
     gap:"3%",imageHeight:"50%"}}>

@@ -37,29 +37,39 @@
   }
 }
 .foot{
-  width: 1150px;
+  width: 100%;
   height: auto;
-  /* border: 3px solid red; */
+  border: 3px solid red;
   background-color: rgb(8, 8, 150);
-  color: white;
+  color: black;
   
-  gap:100px;
+  /* gap:40px; */
   /* margin-left: 50px; */
   margin: auto;
 }
 .footers{
+
   display: flex;
   grid-template-rows: repeat(4,150px);
-  margin-left: 14%;
-  gap:100px
+  /* margin-left: 14%; */
+  gap:10px
   
 
 }
-.dis{
+/* .dis{
   width: 100%;
   background-color:rgb(28, 28, 133);
   color:white;
   margin: auto;
  
+} */
+.digital{
+  width: 100%;
+  height:auto;
+  /* margin: auto; */
+  /* display: flex;
+  justify-content: space-between; */
+  /* border: 1px solid red; */
+
 }
 

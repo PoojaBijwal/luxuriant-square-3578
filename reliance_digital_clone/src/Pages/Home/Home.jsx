@@ -1,5 +1,6 @@
 import React from 'react'
-// import DigitalAudio from './DigitalAudio/DigitalAudio'
+import Footer from '../../Components/Footer'
+import DigitalAudio from './DigitalAudio'
 import Electronics from './Electronics'
 import Explores from './Explores'
 import First from './First'
@@ -10,16 +11,17 @@ import Leds from './Leds'
 import Monitors from './Monitors'
 import Storages from './Storages'
 import Watchs from './Watchs'
+// import Footer from '../Components/Footer'
 // import Navbar from '../Navbar/Navbar'
 
 const Home = () => {
   return (
-    <>
+    <div style={{width:"98%",margin:"auto"}}>
     {/* <Navbar/> */}
 
           <First /> 
 
-     {/* <DigitalAudio />  */}
+     <DigitalAudio /> 
       <hr/>
 
          <Leds />
@@ -41,7 +43,9 @@ const Home = () => {
       <Storages /> 
       <hr />
       <Explores />
-    </>
+      <hr />
+      <Footer />
+    </div>
   )
 }
 

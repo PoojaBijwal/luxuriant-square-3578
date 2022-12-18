@@ -3,9 +3,9 @@ import React from 'react'
 
 const Electronics = () => {
   return (
-    <div>
-        <h1 style={{marginRight:"55%"}}>GREAT DEALS ON ELECTRONICS</h1>
-        <div className='electronics' style={{gridTemplateColumns:"repeat(2,1fr)",gridTemplateRows:"repeat(4,150px)"}}>
+    <div >
+        <h1 style={{fontSize:"30px", marginRight:"850px"}}>GREAT DEALS ON ELECTRONICS</h1>
+        <div className='electronics' style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gridTemplateRows:"repeat(2,1fr)",rowGap:"15px"}}>
 
         <img style={{height:"220px",marginRight:"20px"}} src="https://www.reliancedigital.in/medias/Televisions-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w4MTU1NXxpbWFnZS9qcGVnfGltYWdlcy9oNDEvaDYwLzk5MTM3Nzc1MjA2NzAuanBnfGIxMjNhZGFhN2FiYzVmMTRmNjExNDkyOTliNjZkYmNhNjk5NDI5Y2ZkODU2MmNjZmViMmQ3N2FlY2EyZDZjYjk" alt='TV' /> 
         <img style={{height:"220px",marginRight:"20px"}}  src='https://www.reliancedigital.in/medias/Smartwatches-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0OTAwNHxpbWFnZS9qcGVnfGltYWdlcy9oNzUvaDMxLzk5MTM3Nzc2NTE3NDIuanBnfDc0ZjgyYjQzZjcxNGYxMWUxMDdkOTk1Y2RlNTg2MWJlMTdmMmJlYTcwNmUxN2NhNTAzM2JmZTQxNmFjNjgzYjU' alt='watch' />

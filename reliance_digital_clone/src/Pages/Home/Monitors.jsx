@@ -24,11 +24,11 @@ const Monitors = () => {
   
 
   return (
-    <>
-    <h1 style={{marginRight:"50%"}}> UP TO 75% OFF ON MONITORS |</h1>
+    <div style={{width:"100%"}}>
+    <h1 style={{fontSize:"30px", marginRight:"800px"}}> UP TO 75% OFF ON MONITORS |</h1>
 
       <Flex>
-          <img style={{marginRight:"20px",marginBottom:"20px",height:"300px",width:"350px",backgroundColor:"black"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQAndf2JzS1B0CTetM4ne3P8xPovjfVCpOA&usqp=CAU" />
+          <img style={{marginRight:"20px",marginBottom:"20px",height:"300px",width:"350px",backgroundColor:"black"}} src="https://www.reliancedigital.in/medias/Lenovo-L24I-30-Monitor-492849964-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDc1OHxpbWFnZS9qcGVnfGltYWdlcy9oOTYvaDRlLzk4MTczMjkyNzA4MTQuanBnfGI5MGRiMTU5MzFmMTk1ZWUxYWZiZDg2Zjc3ZjFjZmZjNzEyOGEwMTU5Njk5NDFkMWQ3Yzg2MmI0MTI2MDRjOGU" />
          
         {
           arr.map((ele,index) =>{
@@ -53,7 +53,7 @@ const Monitors = () => {
             }
       </Flex>
      
-    </>
+    </div>
 
 
 

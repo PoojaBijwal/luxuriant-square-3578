@@ -8,7 +8,7 @@ const Led = ({url, title,price,mrp,save}) => {
    
     <div style={{ width:"90%",
     height:"370px",
-   
+    // border:"2px solid red",
     display:"fles",
     gridTemplatecolumns:"repeat(5,1fr)",
     gap:"3%",imageHeight:"50%"}}>
@@ -22,7 +22,7 @@ const Led = ({url, title,price,mrp,save}) => {
       <Tag>
         <TagLabel data-cy="watch-price"> Deal price: ₹ {price}</TagLabel>
       </Tag>
-      <Heading data-cy="watch-mrp" style={{  verticlAlign: "middle"}}> M.R.P:₹ {mrp}</Heading>
+      {/* <Heading data-cy="watch-mrp" style={{  verticlAlign: "middle"}}> M.R.P:₹ {mrp}</Heading> */}
       <Box data-cy="watch-save"> you Save:₹ {save}</Box>
     </Stack>
     <button>Offer Available</button>

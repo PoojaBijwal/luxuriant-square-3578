@@ -26,7 +26,7 @@ const Kodaks = () => {
 
   return (
     <>
-    <h1 style={{marginRight:"50%"}}> LED TV  STARTING FROM 7499</h1>
+    <h1 style={{fontSize:"30px", marginRight:"840px"}}> LED TV  STARTING FROM 7499</h1>
 
       <Flex>
         {

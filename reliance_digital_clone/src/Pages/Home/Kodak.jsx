@@ -5,12 +5,12 @@ import {Text, Image, Box,Stack,Heading, Tag, TagLabel} from '@chakra-ui/react'
 const Kodak = ({url, title,mrp}) => {
  
   return (
-    <div className="watch">
+    <div className="watch" >
    
     <div style={{ width:"90%",
-    height:"370px",
+    height:"100%",
    
-    display:"fles",
+    // display:"flex",
     gridTemplatecolumns:"repeat(3,1fr)",
     gap:"3%",imageHeight:"50%"}}>
        
