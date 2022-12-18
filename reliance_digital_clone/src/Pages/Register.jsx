@@ -31,6 +31,13 @@ const Register = () => {
   const handle123 = () => {
     if (firstnam !== "" && lastName !== "" && email !== "") {
       setfirstName(firstnam);
+      toast({
+        title: "Account created.",
+        description: "We've created your account for you.",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
 
       navigate("/");
     } else setfirst(true);
@@ -103,19 +110,7 @@ const Register = () => {
         <Button
           colorScheme="red"
           width="90%"
-          onClick={() => {
-            if (firstnam !== "" && lastName !== "" && email !== "") {
-              setfirstName(firstnam);
-              toast({
-                title: "Account created.",
-                description: "We've created your account for you.",
-                status: "success",
-                duration: 9000,
-                isClosable: true,
-              });
-              navigate("/checkout");
-            } else setfirst(true);
-          }}
+          onClick={handle123}
         >
           PROCEED
         </Button>

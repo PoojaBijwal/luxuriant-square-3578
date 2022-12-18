@@ -7,13 +7,13 @@ import Login from '../Pages/Login';
 import Payments from '../Pages/Payments';
 import Register from '../Pages/Register';
 import Search from "../Routes/AllRoutes";
-// import Home from './Home'
+import Home from '../Pages/Home/Home';
 
 
 const AllRoutes = () => {
   return (
     <Routes>
-        {/* <Route path='/' element={<Home/>}/> */}
+        <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/cart' element={<Cart/>}/>
