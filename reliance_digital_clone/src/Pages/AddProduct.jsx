@@ -77,17 +77,4 @@ const {title,price,image,category,description} = detail;
 
 export default AddProduct;
 
-/*
-{
-    "id": 1,
-    "title": "Qubo Baby Cam Smart Camera, Black (Penguin Themed)",
-    "price": 4990,
-    "description": "If you are photography enthusiast then Featuring an 18 MP (APS-C) CMOS sensor and the DIGIC 4+ imaging processor, you can capture amazing photos of your subject at all times, even in low-light conditions",
-    "category": "camera",
-    "image": "https://www.reliancedigital.in/medias/Qubo-QUBO-BABY-CAM-Smart-Cameras-491936008-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MzM3NXxpbWFnZS9qcGVnfGltYWdlcy9oOTYvaGRkLzk0MTY2MzkwMjEwODYuanBnfDZiZWRkYTc2YzFlODk0MjYwNjc1ZWIyODhmOWIzMzlhMjJlMmJkNmE2ZDE5NjFmNWUyNTI4NzVmMjA1Mzk3NDQ",
-    "rating": {
-      "rate": 3.9,
-      "count": 120
-    }
-  },
-*/
+
