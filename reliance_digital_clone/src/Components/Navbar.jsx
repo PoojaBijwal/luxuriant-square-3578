@@ -5,6 +5,7 @@ import "./Navbar.css";
 import logo from "../assets/Foryou.com.png";
 import { AppContext } from "../context/AppContext";
 import searchicon from "./searchicon.svg";
+import Search from "../Pages/Search"
 
 const Navbar = () => {
   let Product = [

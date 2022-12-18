@@ -106,14 +106,16 @@ function Dashboard() {
           </Flex>
         </SimpleGrid>
       </Box>
-      <Box w='90%' margin='auto' mt={50} textAlign='left'>
-        <Heading as='h3' size='lg'>Recent Orders</Heading>
+      <Box w="90%" margin="auto" mt={50} textAlign="left">
+        <Heading as="h3" size="lg">
+          Recent Orders
+        </Heading>
         <Divider />
-        <TableContainer mt='10px'>
-          <Table variant="striped" colorScheme='red'>
+        <TableContainer mt="10px">
+          <Table variant="striped" colorScheme="red">
             <TableCaption>Recent Orders</TableCaption>
             <Thead>
-              <Tr bg='teal.300'>
+              <Tr bg="teal.300">
                 <Th>Order ID</Th>
                 <Th>Order Date</Th>
                 <Th>Delivery Date</Th>
@@ -127,7 +129,9 @@ function Dashboard() {
                 <Td>inches</Td>
                 <Td>millimetres (mm)</Td>
                 <Td>25.4</Td>
-                <Td><Badge colorScheme='green'>Success</Badge></Td>
+                <Td>
+                  <Badge colorScheme="green">Success</Badge>
+                </Td>
                 <Td>millimetres (mm)</Td>
                 <Td>25.4</Td>
               </Tr>
