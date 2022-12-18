@@ -8,7 +8,8 @@ const Register = () => {
     const {mobile,setemail,email,setlastName,lastName,setfirstName,firstName,mobile1,setMobile1} = useContext(AppContext)
     const [first, setfirst] = useState(true)
     const [firstnam, setfirstnam] = useState("")
-    const [verified, setverified] = useState(false)
+    const [verified, setverified] = useState(false);
+    
     const ref1=useRef({})
     const handleEmail=()=>{
       if(email==="")
@@ -43,7 +44,7 @@ const Register = () => {
         <br/>
         <Box margin="auto" width="500px" boxShadow='md' display="flex" flexDirection="column" height="600px" justifyContent="space-around" alignItems="center">
         <Text fontWeight="bold">Register New Account</Text>
-        <Input placeholder='First Name*' width="90%" onChange={(e)=>setfirstnam(e.target.value)}/>
+        <Input placeholder='First Name*' width="90%"  onChange={(e)=>setfirstnam(e.target.value)}/>
         <Input placeholder='Last Name*' width="90%" onChange={(e)=>setlastName(e.target.value)}/>
         <Input type="email" placeholder='Email Address*' width="90%" onChange={(e)=>setemail(e.target.value)}/>
         {first&&<Text color="red" fontSize='sm'>Field marked * are mandatory</Text>}
@@ -56,7 +57,7 @@ const Register = () => {
             {verified?"Verified 🗸":"Submit OTP"}
         </Button></Flex>
         }
-        <Input placeholder='Mobile Number*' width="90%" value={mobile}/>
+        <Input placeholder={mobile} width="90%" />
         <Text  fontSize='xs'>Your mobile number will be used to avail benefits such as Jio Mart Cashback and ROne Loyality Points and receive quick notifications.
 
 </Text>

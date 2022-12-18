@@ -54,7 +54,7 @@ const handleCheckout=()=>{
         <Flex>
         <Text>My Cart ({item.length} Items)</Text>
         <Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/>
-        <Text>Shipping to:  670007 <i class="fa-solid fa-location-dot"></i></Text>
+        <Text>Shipping to:  <i className="fa-solid fa-location-dot"></i></Text>
         <Spacer/>
         <Button colorScheme='red' variant='solid' width="30%" onClick={handleCheckout}>
             Checkout

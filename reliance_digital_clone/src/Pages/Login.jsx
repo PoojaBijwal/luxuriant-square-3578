@@ -12,7 +12,7 @@ const Login = () => {
         <br/>
         <Box marginLeft="65%" width="500px" boxShadow='md' display="flex" flexDirection="column" height="250px" justifyContent="space-around" alignItems="center">
         <Text fontWeight="bold">Login/Register</Text>
-        <Input type="number" placeholder='Enter Mobile Number' width="90%" onChange={(e)=>setMobile(e.target.value)}/>
+        <Input type="number" placeholder='Enter Mobile Number' width="90%"  onChange={(e)=>setMobile(e.target.value)}/>
         {first&&<Text color="red" fontSize='sm'>Mobile number is necessary</Text>}
         <Button colorScheme='red' width="90%" onClick={()=>
           {if(mobile.length!==0)

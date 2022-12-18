@@ -160,7 +160,7 @@ function ModalSec(props) {
     </>
   );
 
-}
+};
 
-}
+
 
