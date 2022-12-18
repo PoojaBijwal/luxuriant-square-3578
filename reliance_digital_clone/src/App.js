@@ -1,17 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+
 import Home from './Pages/Home/Home';
-// import Footer from './Components/Footer';
+
+
+import AllRoutes from './Routes/AllRoutes'
+
+ import Navbar from './Components/Navbar';
+
+import './App.css';
+
 
 
 
 function App() {
   return (
     <div className="App">
+
        <Home />
-       {/* <Footer/> */}
       
     </div>
+
+      <div style={{position:"sticky",top:"0",zIndex:1}}><Navbar/></div>
+      <AllRoutes/> 
+    
+      </div>
+
   );
 }
 
