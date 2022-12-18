@@ -1,6 +1,6 @@
 //Bhavik Dholu fw20_0582
 import axios from "axios";
-import { ADD_PRODUCT, GET_PRODUCT, REMOVE_PRODUCT } from "./admin.types";
+import { ADD_PRODUCT, GET_PRODUCT, REMOVE_PRODUCT ,GET_ORDER_PRODUCT,CHANGE_STATUS,ORDER_CHECKOUT} from "./admin.types";
 
 export const AdminGetProduct = (category) => async (dispatch) => {
   let res = await axios.get(
@@ -40,4 +40,11 @@ export const AdminRemoveProduct = (category, id) => async (dispatch) => {
   } catch (error) {
     console.log(error);
   }
+};
+
+export const GetOrder = () => async (dispatch) => {
+  let res = await axios.get(
+    `https://verecel-database-api.vercel.app/user`
+  );
+  dispatch({ type: GET_ORDER_PRODUCT, payload: res.data });
 };
