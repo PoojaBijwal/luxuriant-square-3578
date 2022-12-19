@@ -1,5 +1,5 @@
 //Bhavik Dholu fw20_0582
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Badge,
   Box,
@@ -28,22 +28,29 @@ import {
   Tr,
   useDisclosure,
 } from "@chakra-ui/react";
+import { GetOrder, updateStatus } from "../Redux/Admin/admin.actions";
+import { useDispatch, useSelector } from "react-redux";
 
 const init = {
-  delivery_Date : "",
+  Delivery_Date : "",
   status : "pending"
 }
 
 function ManageOrder() {
-  const [change,setChange] = React.useState(init);
+  const {data} = useSelector((store) => store.admin);
+  const dispatch = useDispatch();
+
   
+const [change,setChange] = React.useState(init);
+
   const handleChange = (e)=>{
     const {name,value} = e.target;
     setChange({...change,[name]:value});
   }
 
-  const handleSave = ()=>{
-    console.log(change);
+  const handleSave = (id)=>{
+    // console.log(change);
+    dispatch(updateStatus(id,change))
     Toast({
       description: "Edit Successfully",
       status: 'success',
@@ -52,6 +59,10 @@ function ManageOrder() {
       isClosable: true,
     });
   }
+
+  useEffect(() => {
+    dispatch(GetOrder());
+  }, []);
 
   return (
     <Box>
@@ -73,30 +84,23 @@ function ManageOrder() {
               </Tr>
             </Thead>
             <Tbody>
-              <Tr>
-                <Td>inches</Td>
-                <Td>millimetres (mm)</Td>
-                <Td>25.4</Td>
-                <Td>
-                  <Badge colorScheme="green">Success</Badge>
+            {data?.map((order) => (
+                <Tr key={order.id}>
+                  <Td>{order.id}</Td>
+                  <Td>{order.date}</Td>
+                  <Td>{order.Delivery_date}</Td>
+                  <Td>
+                  {
+                      order.status === "pending"?<Badge colorScheme="orange">pending</Badge>:order.status === "cancel"?<Badge colorScheme="red">cancel</Badge>:order.status === "process"?<Badge colorScheme="blue">In process</Badge>:<Badge colorScheme="green">Delivered</Badge>
+                    }
+                  </Td>
+                  <Td>{order.total}</Td>
+                  <Td>Cash</Td>
+                  <Td>
+                  <ModalSec handleChange={handleChange} handleSave={()=>handleSave(order.id)} change={change}/>
                 </Td>
-                <Td>millimetres (mm)</Td>
-                <Td>25.4</Td>
-                <Td>
-                  <ModalSec handleChange={handleChange} handleSave={handleSave} change={change}/>
-                </Td>
-              </Tr>
-              <Tr>
-                <Td>feet</Td>
-                <Td>centimetres (cm)</Td>
-                <Td>30.48</Td>
-                <Td>inches</Td>
-                <Td>millimetres (mm)</Td>
-                <Td>25.4</Td>
-                <Td>
-                  <ModalSec handleChange={handleChange} handleSave={handleSave} change={change}/>
-                </Td>
-              </Tr>
+                </Tr>
+              ))}
             </Tbody>
           </Table>
         </TableContainer>
@@ -134,7 +138,7 @@ function ModalSec(props) {
               <Input placeholder="Select Date and Time" size="md" type="date" name="delivery_Date" value={delivery_Date} onChange={handleChange}/>
               <FormLabel>Status</FormLabel>
               <Select
-                placeholder="Select country"
+                placeholder="Select status"
                 name="status"
                 value={status}
                 onChange={handleChange}
@@ -161,6 +165,7 @@ function ModalSec(props) {
   );
 
 };
+
 
 
 

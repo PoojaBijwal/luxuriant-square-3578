@@ -1,7 +1,8 @@
 // Bhavik Dholu fw20_0582
-import {ADD_PRODUCT,GET_PRODUCT,REMOVE_PRODUCT,GET_ORDER_PRODUCT,CHANGE_STATUS,ORDER_CHECKOUT} from "./admin.types";
+import {ADD_PRODUCT,GET_PRODUCT,REMOVE_PRODUCT,GET_ORDER_PRODUCT,CHANGE_STATUS,ORDER_CHECKOUT, ADMIN_LOGIN} from "./admin.types";
 
 const AdminInit = {
+    Adminlogin : false,
     cancel:0,
     pending:0,
     process:0,
@@ -36,11 +37,11 @@ export const AdminReducer = (state=AdminInit,{type,payload})=>{
             let delivered_val=0;
             let val=0;
             payload.forEach((product)=>{
-                if(product.status=="pending"){
+                if(product.status==="pending"){
                     pending_val=pending_val+1;
-                }else if(product.status=="cancel"){
+                }else if(product.status==="cancel"){
                     cancel_val=cancel_val+1;
-                }else if(product.status=="process"){
+                }else if(product.status==="process"){
                     process_val=process_val+1;
                 }else{
                     delivered_val=delivered_val+1;
@@ -48,18 +49,29 @@ export const AdminReducer = (state=AdminInit,{type,payload})=>{
                 val=val+product.total
             })
             return {
-                ...state,cancel:cancel_val,pending:pending_val,process:process_val,delivered:delivered_val
+                ...state,cancel:cancel_val,pending:pending_val,process:process_val,delivered:delivered_val,data:payload,total:val
             }
         }
         case CHANGE_STATUS : {
+            let updatedOrder = state.data.map((item)=>{
+                if(item.id===payload.id){
+                  return {...payload}
+                }
+                return item;
+              })
 
             return {
-                ...state
+                ...state,data:updatedOrder
             }
         }
         case ORDER_CHECKOUT :{
             return {
-                ...state
+                ...state,data:[...state.data,payload]
+            }
+        }
+        case ADMIN_LOGIN : {
+            return{
+                ...state,Adminlogin:payload
             }
         }
         default:{
