@@ -4,10 +4,11 @@ import {Box, SimpleGrid} from "@chakra-ui/react";
 import {useDispatch,useSelector} from "react-redux";
 import { AdminGetProduct } from '../Redux/Admin/admin.actions';
 import ProductCard from '../Components/ProductCard';
+import { AppContext } from '../context/AppContext'
 
 
 function MobilePage() {
-    const product_Data = useSelector((store)=>store.admin.data);
+  const {Mobile} = useContext(AppContext)
     const dispatch = useDispatch();
 
     React.useEffect(()=>{
@@ -17,7 +18,7 @@ function MobilePage() {
     <Box w="90%" margin="auto">
        <SimpleGrid columns={{base:1,md:2,lg:4}} spacing={10}>
         {
-            product_Data?.map((product)=><ProductCard id={product.id} key={product.id} title={product.title} category={product.category} price={product.price} desc={product.description} image={product.image}/>)
+            Mobile?.map((product)=><ProductCard id={product.id} key={product.id} title={product.title} category={product.category} price={product.price} desc={product.description} image={product.image}/>)
         }
        </SimpleGrid>
     </Box>

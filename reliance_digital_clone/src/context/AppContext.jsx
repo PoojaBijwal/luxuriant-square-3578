@@ -314,32 +314,248 @@ let addItems8 = [
     {qty:0, image:    "https://www.reliancedigital.in/medias/Samsung-T225N-Regular-Tablets-492849721-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjg0MnxpbWFnZS9qcGVnfGltYWdlcy9oMDQvaGYzLzk4MDQxMDk0MTQ0MzAuanBnfDExNGIzNjE3YmJlMGQ0NmQwYjMxNzNlN2IxYTc3NzlhMTgyYzE4MTg4ZTY1MjA4Zjk1M2EzNTJmODUyMTA5NzY", name: "Samsung-T225N-Regular-Tablets-492849721", price: 28499, id: 56,offer: 39900, save:10,},
     ];
 
-let addItems11=[
-    { qty:0,image: "https://www.reliancedigital.in/medias/OnePlus-9-Smart-Phones-491947285-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0OTExNXxpbWFnZS9qcGVnfGltYWdlcy9oN2YvaDhjLzk1MTA2MzkyMDY0MzAuanBnfDhlNDQyYjI3Mjc2N2M1NGJlNGJkYTdjYjEwMzk5OTY3MzQ3NzI1NDgzZjgxNGUzMWRlMjc5NWU1MjFiN2MwZDk",name: "OnePlus-9", price: 20499, id: 57,offer: 29900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849904-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDU4OHxpbWFnZS9qcGVnfGltYWdlcy9oODAvaDI1Lzk4MzQxMDkyMDY1NTguanBnfGU1NGNkMTA3ODhiYTJhZGEyNDFhMGEzZDZhNjg5NzhmZWYzM2JkNDY4NjY3MzhiZTA3MzRmM2U4OGUzMmU4Y2Q",name: "OnePlus-9", price: 30499, id: 58,offer: 39900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/OnePlus-9-Pro-Smart-Phones-491947275-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzOTQ5MHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDY0Lzk1MTA2MjEyNDk1NjYuanBnfGVmMGE2NzBkNGZmZmU4M2JmOGMxZWE1NzM5YTRjNjAxMjI5ZTNkYTBiZmRlZWE1Mzc1YTc0Mjc5M2ZmYThlYzQ",name: "Motorola-E32", price: 25499, id: 59,offer: 29900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849905-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDYxM3xpbWFnZS9qcGVnfGltYWdlcy9oNDAvaDAzLzk4MzQxMDY1MTk1ODIuanBnfDg0MDRiOWQxNGE5Zjk1OThkNTQ1NTJmYTU2ZTJmMzgyYTQ1OTQwYmZlZWYyNjliYTllMjEzNzBkZmZkNjVlYzE",name: "OnePlus-9-Pro", price: 20499, id: 60,offer: 29900, save:10,},
-    {qty:0, image:  "https://www.reliancedigital.in/medias/Samsung-M52-Smart-Phone-491998466-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzODU3MHxpbWFnZS9qcGVnfGltYWdlcy9oMjYvaDQ5Lzk3NDk1NzgyNTIzMTguanBnfDU5YjAwZmE3ZmI4MDI3N2FhMWQ4NDlkNGFiOTFkNmMzOWFmODQxYWQyMzYyODgwMWNkZDgyOWU0MDU4ZTQ4NjA",name: "Motorola-E32", price: 39499, id: 61,offer: 45900, save:10,},
-    { qty:0,image:  "https://www.reliancedigital.in/medias/OnePlus-9-Pro-Smart-Phones-491947280-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NzY5NHxpbWFnZS9qcGVnfGltYWdlcy9oZTgvaGZkLzk1MTA2MjQ5MTk1ODIuanBnfDdiNjIyOTdmY2Q0YjNjNTI5M2VkOWU4YTIyMWU2ZTY1Y2MyMjk5ZDE4NTI3YmEyNjQwZjk3MjkzODFmYzFhZTU",name: "Samsung-M52", price: 40499, id: 62,offer: 49900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Redmi-9A-Sport-Smartphone-491998274-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMjQ3M3xpbWFnZS9qcGVnfGltYWdlcy9oNDMvaGM3Lzk2NTQxODA0NDYyMzguanBnfDk2Y2VkOGYwYjIwMDE5OTkzMzYwNDA0MWE3Yzk2Y2IzMDgyOTVhYzdiZmExMDkwYjU1MGNiZDhlYjA1ZTRmZmE",name: "OnePlus-9-Pro", price: 22499, id: 63,offer: 29900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/Motorola-G82-Mobile-Phone-492850555-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODIxMnxpbWFnZS9qcGVnfGltYWdlcy9oYTMvaGVmLzk4NDE2NzA3ODMwMDYuanBnfGM5OWMyZTkxZGZkYzA2NWI3NWJiMTE1NDBkNWY4ZTMyOGJkNDhjMjcxMDkxYTE0Y2Q0NTBmMzk4NmMxYWVlN2Y",name: "Redmi-9A", price: 35499, id: 64,offer: 39900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Apple-12-Smartphones-491901536-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NTIzNHxpbWFnZS9qcGVnfGltYWdlcy9oMzQvaGE1Lzk0MDc3NDY0NDEyNDYuanBnfDA3MmMxMTU3MzQ0M2ViMjdlMTMwNjlkZGMxOWMyNDViYjdiODJiYjZlNDExYzM4ZTQwYzQxOGZiNTk4MjMyNTk",name: "Motorola-G82", price: 31499, id: 65,offer: 39900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/Tecno-TECNO-POVA3-Smart-Phones-492850709-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDIzNXxpbWFnZS9qcGVnfGltYWdlcy9oYmEvaGRhLzk4NDg2NTk4Njk3MjYuanBnfDMzODFjYzQzNDczYjAxOGViOTUxOWYxNmMwYmM0Y2E1YjAyYTAwZTBhODg3MWE5YWVkZGU3MTRiZTkyMWQ2MTg",name: "Apple-12", price: 28499, id: 66,offer: 29900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/Tecno-TECNO-POVA3-Smart-Phones-492850712-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDIzNXxpbWFnZS9qcGVnfGltYWdlcy9oMTgvaDQ1Lzk4NDg3MzYyMTkxNjYuanBnfGY4YmU3ODgwNThiZjRiMjY1MmE5Njg1ZDM2ZTc0OTY5OTcxNDhkNmRhODRlMTJiZTRiYWM2NzljNTQyMWNhMjA",name: "Tecno-TECNO-POVA3", price: 20499, id: 67,offer: 29900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Samsung-M52-Smart-Phone-491998468-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzODU3MHxpbWFnZS9qcGVnfGltYWdlcy9oMjIvaGIxLzk3NDk1ODE1MjkxMTguanBnfDEwNWI3NTgyZDEzNTRjNWFhNzkzMzNiOWQ5YzQ4Yjc1YmE1MWNiZjU1ZmI1NGJmZGY0ZTM2NGI0YzIwODQ2ZjM",name: "Tecno-TECNO-POVA3", price: 40499, id: 68,offer: 47900, save:10,},
-    {qty:0, image:  "https://www.reliancedigital.in/medias/realme-C25Y-Smartphones-491998358-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3OTAzNHxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDFlLzk2NzM1NTUxODE1OTguanBnfDBkZDVhOGU3NDZjNmQ4ZDU0ZjdkNTU3ZGNjYzEwNjllM2E2ZmY1ZmU1Y2UzZjIwNWI1Y2Q0Yzg5MjczOGM0ZWM",name: "Samsung-M52", price: 44499, id: 69,offer: 49900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Vivo-T1-Pro-Smartphones-492850282-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjA2MnxpbWFnZS9qcGVnfGltYWdlcy9oNzMvaDMyLzk4MjQzNzAzMjc1ODIuanBnfGUxNmY2ZjRkYTFhMTgxZTZkNmE5ODFkZjhlZjU1NmFkYWU0MWM0OTVlMTBkY2ZhODAwYTI4ZmEzNTJkMmQ1NmQ",name: "realme-C25Y", price: 37499, id: 70,offer: 39900, save:10,},
-    { qty:0,image:  "https://www.reliancedigital.in/medias/Motorola-G71-Mobile-Phone-492849088-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTk3OXxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGNmLzk4Mjg4NDc3Nzk4NzAuanBnfGQxYjE2M2ZlMTBkOGEyZGQwNWQyYjRlZWY4NTZkMzUxMDY5ZDQxMjQwYjAwMzM0NjlmNGVkYjVjNGU1NjQ2NGE",name: "Vivo-T1", price: 27499, id: 71,offer: 29900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/Samsung-M536BE-Mobile-Phone-492850532-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDcxOXxpbWFnZS9qcGVnfGltYWdlcy9oYzcvaDEwLzk4NDEwMTcwMjg2MzguanBnfDU5YmVlYmJiMzIzOTQwMzdjNTNkMGMyNjFkYWJiNjEwMzUyZWQxYTY2N2M4MjI0NGYyOGZkMjZmY2M1M2FhNzE",name: "Motorola-G71", price: 42499, id: 72,offer: 49900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Motorola-G60-PANB0023IN-SMART-PHONE-492849079-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjAzM3xpbWFnZS9qcGVnfGltYWdlcy9oZmUvaGI5Lzk4MTY5MTYyMzAxNzQuanBnfGYwMDUyNjU4MzUwMmNlNmMzMWM0Y2U0NDMyODE5NjhhZDA1OWYwN2I2MWVkMTFlNDdlMDQ4ODU1MzI0NjJmMmI",name: "Samsung-M536BE", price: 20499, id: 73,offer: 29900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/REDMI-NOTE-11-Mobile-Phone-492849127-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTQ2M3xpbWFnZS9qcGVnfGltYWdlcy9oOGQvaDFlLzk4MjAyOTcwMDMwMzguanBnfDczMWEzMjM2ZWEzNjliYmU4YWEzYmIxYTZjNzU4MGVhNGJmZmIxYWMwMWU0YTNjMzUyNjRhZjUxMDlmY2Q3YzM",name: "Motorola-G60", price: 45499, id: 74,offer: 49900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/REDMI-NOTE-11S-Mobile-Phone-492849134-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNzIwOXxpbWFnZS9qcGVnfGltYWdlcy9oYTAvaDllLzk4MjAzMTc2NDY4NzguanBnfGMwMjcyNjhkZTQyNmMyODFlZTRlYjNkYzZhNTMwOTFiYTkzMDQxYWJmNWZkNTFlZTMxMjVhNzdjMjY5NGJlMmU",name: "Motorola-G60", price: 26499, id: 75,offer: 29900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/Apple-MLPK3HN-A-Smart-Phones-491997702-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NTM3MHxpbWFnZS9qcGVnfGltYWdlcy9oOTQvaDkxLzk3NzYwNDgxNDQ0MTQuanBnfDk3NjgzNzA0ODZiYjQ0NzJlMmE1ZjY1ODBjNzcxN2E1NjI0MGE5MzFiNDYyNmY5NzFiN2YyZjI3YTNhMTQ0YmM",name: "Motorola-G60", price: 30000, id: 76,offer: 34900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/REDMI-NOTE-11S-Mobile-Phone-492849135-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNzI0OXxpbWFnZS9qcGVnfGltYWdlcy9oYzgvaDA3Lzk4MjAzMDg0NzE4MzguanBnfGI2Mjg3NjVjNjNmODQxZGU5NTc0MGJkMWY4N2M5YzIzYzZjYjZkNzdkNTM0NDAwMmI5OTgxZmJhNTUwYzJiNzg",name: "Motorola-G60", price: 28729, id: 77,offer: 29900, save:10,},
-    { qty:0,image: "https://www.reliancedigital.in/medias/Oppo-K10-Smartphones-492849761-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MjI5OXxpbWFnZS9qcGVnfGltYWdlcy9oNWUvaDZmLzk4MDM4NzYxNzE4MDYuanBnfGQyNGFiOWMzZGQxNDQ1Mjk4YWJjNTU5MDZhYmVhYTAyYTBiZTYwYjRiMDZiODlmOGQ0OTAyOTBiYWI5ZDg3N2Y",name: "Motorola-G60", price: 40099, id: 78,offer: 49900, save:10,},
-    { qty:0,image:  "https://www.reliancedigital.in/medias/Oppo-A57-Smart-Phones-492850646-i-492850646-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjM4MXxpbWFnZS9qcGVnfGltYWdlcy9oMmEvaDQ3Lzk4NDcyMzA0MzEyNjIuanBnfDgyNDVjZmNlMDIyODdjMDJlYjQ3NzczNjg4OTE1MjA4NWQxMTE1ZDQ0ZDVlOTBjOWMxMmQ1MGZjMmRiNTA0YzA",name: "Oppo-A57", price: 39499, id: 79,offer: 45900, save:10,},
-    {qty:0, image: "https://www.reliancedigital.in/medias/Tecno-Spark-8-pro-Mobile-Phone-492850000-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODczOXxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDQ5Lzk4MjA0MjY0MzY2MzguanBnfDA2OGY1ZTc0ODIxYTNhNTg4OTBlOWM4YTAzOGI2OWZiMjQ4NjRjOGJhZjg5MTJjMjNjMmQzYmZiYTU3NDY4Nzc",name: "Tecno-Spark-8-pro", price: 45499, id: 80,offer: 49900, save:10,},
-]
+let Mobile=[
+  {
+  "id": 15,
+  "title": "SAMSUNG Galaxy F22 (Denim Blue, 128 GB) ",
+  "price": 12500,
+  "description": "Bid goodbye to screen stuttering, poor display quality, and low-resolution photos by getting your hands on the Samsung Galaxy smartphones",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/416/416/kqqykcw0/mobile/j/5/7/galaxy-f22-sm-e225flbdins-samsung-original-imag4z99fp4qdfby.jpeg?q=70",
+  "rating": {
+  "rate": 4.2,
+  "count": 320
+  }
+  },
+  {
+  "id": 16,
+  "title": "SAMSUNG Galaxy F23 5G (Aqua Blue, 128 GB)",
+  "price": 14500,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/312/312/l0sgyvk0/mobile/k/x/c/-original-imagcg22czc3ggvw.jpeg?q=70",
+  "rating": {
+  "rate": 4.4,
+  "count": 220
+  }
+  },
+  {
+  "id": 17,
+  "title": "SAMSUNG Galaxy F23 5G (Copper Blush, 128 GB)",
+  "price": 14999,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/312/312/l0sgyvk0/mobile/k/x/c/-original-imagcg22czc3ggvw.jpeg?q=70",
+  "rating": {
+  "rate": 4.1,
+  "count": 450
+  }
+  },
+  {
+  "id": 18,
+  "title": "SAMSUNG Galaxy F23 5G (Forest Green, 128 GB)",
+  "price": 17999,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/416/416/l0sgyvk0/mobile/f/v/c/-original-imagcg22pf79cgau.jpeg?q=70",
+  "rating": {
+  "rate": 4.1,
+  "count": 450
+  }
+  },
+  {
+  "id": 19,
+  "title": "SAMSUNG M53 5G (Mystique Green, 128 GB)",
+  "price": 25499,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/416/416/l4vnbm80/mobile/p/v/e/m53-5g-sm-m536bzgeinu-samsung-original-imagfzj8e8hytax2.jpeg?q=70",
+  "rating": {
+  "rate": 4.2,
+  "count": 350
+  }
+  },
+  {
+  "id": 20,
+  "title": "BMAX MaxPad I9 Plus ",
+  "price": 6761,
+  "description": "Android 11  PC, 10.1 Inch RK3566 1.8GHz Quad Core, 3GB RAM 32GB ROM, 1280x800 IPS 16:10 10-point Touch, WiFi, Bluetooth5.0, USB Type-C, 5000mAh Battery for Study Work Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-10-27/bmax-maxpad-i9-plus-rk3566-quad-core-3gb-ram-32gb-rom-0b169a-1666869213967._w280_p1_.jpg",
+  "rating": {
+  "rate": 3.2,
+  "count": 83
+  }
+  },
+  {
+  "id": 21,
+  "title": "BMAX MaxPad I9 Plus ",
+  "price": 6761,
+  "description": "Android 11  PC, 10.1 Inch RK3566 1.8GHz Quad Core, 3GB RAM 32GB ROM, 1280x800 IPS 16:10 10-point Touch, WiFi, Bluetooth5.0, USB Type-C, 5000mAh Battery for Study Work Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-10-27/bmax-maxpad-i9-plus-rk3566-quad-core-3gb-ram-32gb-rom-0b169a-1666869213967._w280_p1_.jpg",
+  "rating": {
+  "rate": 2.2,
+  "count": 33
+  }
+  },
+  {
+  "id": 22,
+  "title": "N-one NPad Air  ",
+  "price": 8451,
+  "description": "4G LTE 10.1'' 1920x1200 FHD IPS Screen UNISOC Tiger T310 2.0GHz Quad Core CPU Android 11 4GB+64GB 2.4/5GHz WiFi 2MP+5MP Dual Camera Built in GPS BDS GLONASS Galileo Support A-GPS BT5.0 Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-09-29/N-one-NPad-Tablet-10-1---FHD-IPS-Screen-UNISOC-Tiger-T310-517300-0._w280_p1_.jpg",
+  "rating": {
+  "rate": 2.5,
+  "count": 63
+  }
+  },
+  {
+  "id": 23,
+  "title": "N-one NPad Air  ",
+  "price": 9297,
+  "description": "4G LTE 10.1'' 1920x1200 FHD IPS Screen UNISOC Tiger T310 2.0GHz Quad Core CPU Android 11 4GB+64GB 2.4/5GHz WiFi Dual Camera GPS BDS GLONASS Galileo A-GPS BT5.0 Type-C 6200mAh Multi Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-11-09/n-one-npad-air-tablet-with-leather-case-and-tempered-film-pack-cbfd58-1667984739207._w280_p1_.jpg",
+  "rating": {
+  "rate": 4.5,
+  "count": 10
+  }
+  },
+  {
+  "id": 24,
+  "title": "N-one NPad Plus ",
+  "price": 13523,
+  "description": "Android 12  PC, MTK8183 Octa Core 2.0GHz, 6GB+128GB, 10.36'' Full Display 2000x1200 2K Incell FHD IPS Screen 300Nits Brightness, 500g Light, Dual WiFi Camera BT5.0, Type-C Micro SD Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-11-23/n-one-npad-plus-mtk8183-octa-core-6gb-128gb-with-leather-case-506230-1669186849476._w280_p1_.jpg",
+  "rating": {
+  "rate": 5,
+  "count": 10
+  }
+  },
+  {
+  "id": 25,
+  "title": "SAMSUNG Galaxy F22 (Denim Blue, 128 GB) ",
+  "price": 12500,
+  "description": "Bid goodbye to screen stuttering, poor display quality, and low-resolution photos by getting your hands on the Samsung Galaxy smartphones",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/416/416/kqqykcw0/mobile/j/5/7/galaxy-f22-sm-e225flbdins-samsung-original-imag4z99fp4qdfby.jpeg?q=70",
+  "rating": {
+  "rate": 4.2,
+  "count": 320
+  }
+  },
+  {
+  "id": 26,
+  "title": "SAMSUNG Galaxy F23 5G (Aqua Blue, 128 GB)",
+  "price": 14500,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/312/312/l0sgyvk0/mobile/k/x/c/-original-imagcg22czc3ggvw.jpeg?q=70",
+  "rating": {
+  "rate": 4.4,
+  "count": 220
+  }
+  },
+  {
+  "id": 27,
+  "title": "SAMSUNG Galaxy F23 5G (Copper Blush, 128 GB)",
+  "price": 14999,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/312/312/l0sgyvk0/mobile/k/x/c/-original-imagcg22czc3ggvw.jpeg?q=70",
+  "rating": {
+  "rate": 4.1,
+  "count": 450
+  }
+  },
+  {
+  "id": 28,
+  "title": "SAMSUNG Galaxy F23 5G (Forest Green, 128 GB)",
+  "price": 17999,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/416/416/l0sgyvk0/mobile/f/v/c/-original-imagcg22pf79cgau.jpeg?q=70",
+  "rating": {
+  "rate": 4.1,
+  "count": 450
+  }
+  },
+  {
+  "id": 29,
+  "title": "SAMSUNG M53 5G (Mystique Green, 128 GB)",
+  "price": 25499,
+  "description": "Bring home the efficient Samsung Galaxy F23 5G mobile phone that comes with a myriad of impeccable features, including fast operation, versatility, and flawless gaming experience",
+  "category": "mobile",
+  "image": "https://rukminim1.flixcart.com/image/416/416/l4vnbm80/mobile/p/v/e/m53-5g-sm-m536bzgeinu-samsung-original-imagfzj8e8hytax2.jpeg?q=70",
+  "rating": {
+  "rate": 4.2,
+  "count": 350
+  }
+  },
+  {
+  "id": 30,
+  "title": "BMAX MaxPad I9 Plus ",
+  "price": 6761,
+  "description": "Android 11  PC, 10.1 Inch RK3566 1.8GHz Quad Core, 3GB RAM 32GB ROM, 1280x800 IPS 16:10 10-point Touch, WiFi, Bluetooth5.0, USB Type-C, 5000mAh Battery for Study Work Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-10-27/bmax-maxpad-i9-plus-rk3566-quad-core-3gb-ram-32gb-rom-0b169a-1666869213967._w280_p1_.jpg",
+  "rating": {
+  "rate": 3.2,
+  "count": 83
+  }
+  },
+  {
+  "id": 31,
+  "title": "BMAX MaxPad I9 Plus ",
+  "price": 6761,
+  "description": "Android 11  PC, 10.1 Inch RK3566 1.8GHz Quad Core, 3GB RAM 32GB ROM, 1280x800 IPS 16:10 10-point Touch, WiFi, Bluetooth5.0, USB Type-C, 5000mAh Battery for Study Work Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-10-27/bmax-maxpad-i9-plus-rk3566-quad-core-3gb-ram-32gb-rom-0b169a-1666869213967._w280_p1_.jpg",
+  "rating": {
+  "rate": 2.2,
+  "count": 33
+  }
+  },
+  {
+  "id": 32,
+  "title": "N-one NPad Air  ",
+  "price": 8451,
+  "description": "4G LTE 10.1'' 1920x1200 FHD IPS Screen UNISOC Tiger T310 2.0GHz Quad Core CPU Android 11 4GB+64GB 2.4/5GHz WiFi 2MP+5MP Dual Camera Built in GPS BDS GLONASS Galileo Support A-GPS BT5.0 Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-09-29/N-one-NPad-Tablet-10-1---FHD-IPS-Screen-UNISOC-Tiger-T310-517300-0._w280_p1_.jpg",
+  "rating": {
+  "rate": 2.5,
+  "count": 63
+  }
+  },
+  {
+  "id": 33,
+  "title": "N-one NPad Air  ",
+  "price": 9297,
+  "description": "4G LTE 10.1'' 1920x1200 FHD IPS Screen UNISOC Tiger T310 2.0GHz Quad Core CPU Android 11 4GB+64GB 2.4/5GHz WiFi Dual Camera GPS BDS GLONASS Galileo A-GPS BT5.0 Type-C 6200mAh Multi Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-11-09/n-one-npad-air-tablet-with-leather-case-and-tempered-film-pack-cbfd58-1667984739207._w280_p1_.jpg",
+  "rating": {
+  "rate": 4.5,
+  "count": 10
+  }
+  },
+  {
+  "id": 34,
+  "title": "N-one NPad Plus ",
+  "price": 13523,
+  "description": "Android 12  PC, MTK8183 Octa Core 2.0GHz, 6GB+128GB, 10.36'' Full Display 2000x1200 2K Incell FHD IPS Screen 300Nits Brightness, 500g Light, Dual WiFi Camera BT5.0, Type-C Micro SD Sporting up to 6.94 mm sleek build and merely up to 440 g of weight, this tablet lets you effortlessly carry it anywhere. With its attractive design inspired by sunset dunes, this tablet uses OPPO's sophisticated Glow process to make its surface shine and keep fingerprints at bay. Furthermore, powered by Snapdragon 680 octa-core 6 nm processor, this tablet offers efficient performance.",
+  "category": "mobile",
+  "image": "https://img.gkbcdn.com/p/2022-11-23/n-one-npad-plus-mtk8183-octa-core-6gb-128gb-with-leather-case-506230-1669186849476._w280_p1_.jpg",
+  "rating": {
+  "rate": 5,
+  "count": 10
+  }
+  }
+  ]
 
 // let initial=[];
 // let inlove=[];
@@ -361,7 +577,7 @@ export const AppContextProvider = ({children}) => {
   const [car, setCar] = useState(0)
   const [total, settotal] = useState(0)
 
-const list1={flat,setflat,state,setstate,street,setstreet,city,setcity,total,settotal,car,setCar,addItems11, search, setsearch,setemail,email,setlastName,lastName,setfirstName,firstName,mobile,setMobile,bigarr,addItems9, addItems10 ,images,properties1,addItems1,addItems2,addItems3,addItems4,addItems5,addItems6,addItems7,addItems8,bigarr}
+const list1={flat,setflat,state,setstate,street,setstreet,city,setcity,total,settotal,car,setCar,Mobile, search, setsearch,setemail,email,setlastName,lastName,setfirstName,firstName,mobile,setMobile,bigarr,addItems9, addItems10 ,images,properties1,addItems1,addItems2,addItems3,addItems4,addItems5,addItems6,addItems7,addItems8,bigarr}
   return (
     <AppContext.Provider value={list1}>{children}</AppContext.Provider>
   )

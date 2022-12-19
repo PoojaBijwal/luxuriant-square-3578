@@ -32,7 +32,7 @@ import { useState } from "react";
 // import {useDispatch,useSelector} from "react-redux";
 
 const EachProduct = () => {
-  const {item,id} = useParams();
+  const {id} = useParams();
   // const product_data = useSelector((store)=>store.admin.data);
   // const dispatch = useDispatch();
   const { bigarr, setCar, pincode, setPincode, settotal } =
@@ -123,10 +123,10 @@ const EachProduct = () => {
               justifyContent="space-between"
             >
               <Text fontSize="2xl" color="#28316b">
-                ₹ {product.price}
+                ₹ {g.price}
               </Text>
               <Flex>
-                <Text>MRP: ₹ {product.price}</Text>
+                <Text>MRP: ₹ {g.price}</Text>
                 {/* <Text as="del">₹{g.offer}</Text> */}
               </Flex>
               {/* <Flex color="green">
