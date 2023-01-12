@@ -12,6 +12,7 @@ function App() {
     <div className="App">
        {/* <div style={{position:"sticky",top:"0",zIndex:1}}><Navbar/></div>
        <AllRoutes/> */}
+
        <Admin />
     </div>
   );
