@@ -7,7 +7,6 @@ import { AdminAddProduct } from "../Redux/Admin/admin.actions";
 
 const init = {
   title : "",
-  // stock : 0,
   price : 0,
   category : "",
   image : "",
