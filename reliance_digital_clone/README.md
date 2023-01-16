@@ -1,4 +1,4 @@
-//<img src="https://user-images.githubusercontent.com/101565872/192001579-71eeea98-c15c-42ae-8f36-746300cf8c3d.png"/>//
+
 <br/>
 <img src="https://user-images.githubusercontent.com/101565872/192009080-4c3769b2-bcc7-4f09-9250-b8ace9cb11fa.gif" />
 <h2><i><a href="https://elegant-centaur-093589.netlify.app/">LIVE SITE</a></i></h2>
